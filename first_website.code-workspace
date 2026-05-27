@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../first_website"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../IaC"
+		}
+	],
+	"settings": {}
+}
