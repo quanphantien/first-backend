@@ -50,7 +50,6 @@ def close_pool():
 
 
 def create_user(name: str) -> dict:
-    global _pool
     if _pool is None:
         raise RuntimeError("DB pool is not initialized")
     conn = _pool.getconn()
@@ -65,7 +64,6 @@ def create_user(name: str) -> dict:
 
 
 def get_user(user_id: int) -> Optional[dict]:
-    global _pool
     if _pool is None:
         raise RuntimeError("DB pool is not initialized")
     conn = _pool.getconn()
